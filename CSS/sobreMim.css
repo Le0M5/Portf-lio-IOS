@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* .bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*
+
+.roboto-mono-<uniquifier> {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+nav {
+    font-size: 40px;
+    margin: -8px;
+    text-align: center;
+}
+nav a   {
+    color: blue;
+    font-family: "Roboto Mono";
+}
+footer  {
+  font-size: 24px;
+}
+.foot   {
+  color: blue;
+  font-family: "Bebas Neue";
+  font-style: italic;
+}
