@@ -17,7 +17,15 @@
   font-style: normal;
 } */
 
-
+.contato    {
+  display: inline-flex;
+  
+}
+h1  {
+  font-size: 35px;
+  margin: -8px;
+  text-align: center;
+}
 nav {
     font-size: 40px;
     margin: -8px;
