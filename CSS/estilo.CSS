@@ -17,28 +17,39 @@
   font-style: normal;
 } */
 
-.contato    {
+.contato {
     display: inline-flex;
 }
-h1  {
+
+h1 {
     font-size: 35px;
     margin: -8px;
     text-align: center;
 }
+
 nav {
-    font-size: 40px;
+    font-size: 30px;
     margin: -8px;
     text-align: center;
 }
-footer  {
+
+footer {
     font-size: 24px;
 }
-.foot   {
+
+.foot {
     color: blue;
     font-family: "Bebas Neue";
     font-style: italic;
+    text-decoration: none;
 }
-nav a   {
+
+nav a {
     color: blue;
     font-family: "Roboto Mono";
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
 }
