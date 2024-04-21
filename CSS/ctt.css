@@ -33,21 +33,8 @@
     box-sizing: border-box;
 }
 
-:root {
-    --cor-nav: #F7EEDD;
-    --font-size-menu: 1em;
-    --background-nav: #008DDA;
-    --espacamento-nav-a: 12.58em;
-    --cor-foot: blue;
-    --margin-padrao: 25px;
-}
-
 body {
-    background: black;
-}
-
-.assunto {
-    width: 14%;
+    background-color: black;
 }
 
 header {
@@ -84,6 +71,8 @@ header .ctt button {
 
 header .ctt button:hover {
     box-shadow: 0 0 8px aqua;
+    transform: scale(1.10);
+    transition: .2s;
 }
 
 h1 {
@@ -92,134 +81,133 @@ h1 {
     background: linear-gradient(330deg, #0042ac, #0077F5, #01C5F5, #74DDF7);
     background-size: 400% 100%;
     animation: animado 5s linear infinite alternate;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 @keyframes animado {
-    0%  {
+    0% {
         background-position-x: 0%;
     }
+
     100% {
         background-position: 400%;
     }
 }
 
-div.text-site p {
-    padding: 0 50px;
-    width: 1400px;
-    font-size: 24px;
-}
-
-div.flex {
-    width: 1600px;
-}
-
-div.img {
-    filter: drop-shadow(6px 2px 15px aqua);
-    width: 250px;
-    display: flex;
-    justify-content: center;
-}
-
-main {
-    margin: var(--margin-padrao);
-    color: white;
+:root {
+    --cor-nav: #F7EEDD;
+    --font-size-menu: 1em;
+    --background-nav: #008DDA;
+    --espacamento-nav-a: 12.58em;
+    --cor-foot: blue;
+    --margin-padrao: 25px;
 }
 
 section {
-    margin: 40px 5%;
-}
-
-section.especialidades {
-    padding: 40px 5%;
-}
-
-div.flex {
-    justify-content: space-evenly;
-}
-
-.especialidades .especialidades-box {
-    padding: 20px 50px;
+    height: 700px;
+    padding: 80px 4%;
     color: white;
-    margin: 45px 30px;
-    border-radius: 20px;
-    width: 350px;
 }
 
-.especialidades .especialidades-box p {
-    font-size: 20px;
-    font-family: "Roboto Mono", monospace;
+ul {
+    list-style: none;
 }
 
-.especialidades .especialidades-box h3 {
-    font-family: "Bebas Neue", sans-serif;
-    text-align: center;
+.foot {
     font-size: 40px;
-    color: white;
-}
-
-.especialidades-box svg {
-    width: 70px;
-    height: 70px;
     color: aqua;
-    padding-top: 20px;
-}
-
-.especialidades-box:hover {
-    transform: scale(1.10);
-    box-shadow: 0 0 20px white;
-    transition: 0.2s ease;
-}
-
-.flex {
-    display: flex;
-}
-
-.img {
-    padding: 0 20px;
-    flex-direction: column-reverse;
-}
-
-h2.site {
-    text-align: start;
-    padding: 0 50px;
-}
-
-h2 {
-    color: aqua;
-    text-align: center;
+    font-family: "Bebas Neue";
+    text-decoration: none;
+    font-family: "Londrina Solid", sans-serif;
 }
 
 a {
     display: inline-block;
 }
 
-main {
-    margin: var(--margin-padrao);
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-input {
-    background-color: transparent;
-    color: white;
-    font-weight: bolder;
-    border-radius: 25px;
-    border: 2px solid black;
+section h2 {
+    margin: 30px;
     text-align: center;
-    padding: 5px;
+    text-transform: uppercase;
+}
+
+h2 span {
+    margin: 10px;
+    color: aqua;
+}
+
+form input {
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    color: white;
+    border-radius: 18px;
+    font-size: 20px;
+}
+
+form input::placeholder {
+    color: aqua;
+    text-transform: uppercase;
 }
 
 textarea {
-    background-color: transparent;
+    width: 100%;
+    max-height: 200px;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    margin: 20px 0;
+    padding: 20px 15px;
     color: white;
-    font-weight: bolder;
-    border-radius: 25px;
-    border: 2px solid black;
-    text-align: center;
-    padding: 5px;
+    border-radius: 18px;
+    font-size: 20px;
+    resize: none;
 }
 
-li {
-    display: inline-block;
-    padding: 20px;
+textarea::placeholder {
+    color: aqua;
+    text-transform: uppercase;
+}
+
+form input.enviar[type=submit] {
+    display: flex;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    top: 76%;
+    left: 50%;
+    position: absolute;
+    width: 120px;
+    font-weight: bold;
+}
+
+form input.enviar:hover {
+    box-shadow: 0 0 8px aqua;
+    background-color: aqua;
+    color: black;
+    transition: .2s;
+}
+
+ul  {
+    display: flex;
+    margin: 90px 0;
+    padding: 50px 0;
+    transform: translate(-50%, -50%);
+    top:80%;
+    left: 50%;
+    position: absolute;
+}
+
+ul li {
+    padding: 0 40px;
 }
