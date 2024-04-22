@@ -211,3 +211,10 @@ ul  {
 ul li {
     padding: 0 40px;
 }
+
+ul li:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0 8px aqua;
+    border-radius: 15px;
+    transition: .2s ease;
+}

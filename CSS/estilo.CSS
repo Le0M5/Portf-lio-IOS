@@ -132,17 +132,14 @@ section {
 }
 
 section.especialidades {
-    padding: 40px 5%;
-}
-
-div.flex {
-    justify-content: space-evenly;
+    margin-top: 30px;
+    padding: 60px 40px;
 }
 
 .especialidades .especialidades-box {
     padding: 20px 50px;
     color: white;
-    margin: 45px 30px;
+    margin: 30px;
     border-radius: 20px;
     width: 350px;
 }
@@ -172,8 +169,19 @@ div.flex {
     transition: 0.2s ease;
 }
 
+.especialidades h2  {
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-style: italic;
+}
+
 .flex {
     display: flex;
+}
+
+
+div.flex {
+    justify-content: space-between;
 }
 
 .img {
@@ -183,7 +191,7 @@ div.flex {
 
 h2.site {
     text-align: start;
-    padding: 0 50px;
+    padding: 15px 50px;
 }
 
 h2 {
