@@ -73,7 +73,7 @@ header>nav>a {
 }
 
 header .ctt button {
-    padding: 15px 30px;
+    padding: 20px 50px;
     background-color: aqua;
     border: 0;
     border-radius: 25px;
@@ -84,7 +84,9 @@ header .ctt button {
 }
 
 header .ctt button:hover {
-    box-shadow: 0 0 8px aqua;
+    transform: scale(1.10);
+    transition: .2s ease-in;
+    box-shadow: 3px 3px 8px aqua;
 }
 
 h1 {
@@ -98,13 +100,16 @@ h1 {
 }
 
 @keyframes animado {
-    0%  {
+    0% {
         background-position-x: 0%;
     }
+
     100% {
         background-position: 400%;
     }
 }
+
+/* PARTE ABAIXO DO HEADER DO SITE */
 
 div.text-site p {
     padding: 0 50px;
@@ -172,7 +177,7 @@ section.especialidades {
     transition: 0.2s ease;
 }
 
-.especialidades h2  {
+.especialidades h2 {
     margin-bottom: 30px;
     font-size: 35px;
     font-style: italic;
@@ -188,8 +193,12 @@ div.flex {
 }
 
 .img {
-    padding: 0 20px;
     flex-direction: column-reverse;
+}
+
+div.img {
+    padding-left: 70px;
+    width: 300px;
 }
 
 h2.site {
@@ -204,6 +213,7 @@ h2 {
 
 a {
     display: inline-block;
+    text-decoration: none;
 }
 
 main {
@@ -234,3 +244,7 @@ li {
     display: inline-block;
     padding: 20px;
 }
+
+span  {
+    color: white;
+  }

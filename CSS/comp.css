@@ -33,7 +33,7 @@
   box-sizing: border-box;
 }
 
-body  {
+body {
   background-color: black;
 }
 
@@ -69,7 +69,7 @@ header>nav>a {
 }
 
 header .ctt button {
-  padding: 15px 30px;
+  padding: 20px 50px;
   background-color: aqua;
   border: 0;
   border-radius: 25px;
@@ -80,7 +80,9 @@ header .ctt button {
 }
 
 header .ctt button:hover {
-  box-shadow: 0 0 8px aqua;
+  transform: scale(1.10);
+  transition: .2s ease-in;
+  box-shadow: 3px 3px 8px aqua;
 }
 
 
@@ -95,21 +97,30 @@ h1 {
 }
 
 @keyframes animado {
-  0%  {
-      background-position-x: 0%;
+  0% {
+    background-position-x: 0%;
   }
+
   100% {
-      background-position: 400%;
+    background-position: 400%;
   }
 }
 
-
+/* PARTE ABAIXO DO HEADER DO SITE */
 
 main {
   margin: var(--margin-padrao);
   color: white;
   padding: 0px 30px;
   margin: 0 0;
+}
+
+h2 span {
+  color: white;
+}
+
+span  {
+  color: white;
 }
 
 ul {
@@ -119,19 +130,20 @@ ul {
 
 a {
   display: inline-block;
+  text-decoration: none;
 }
 
-.comp  {
+.comp {
   margin: 0 90px;
 }
 
-.comp h2  {
+.comp h2 {
   color: var(--cor-h2);
   text-align: start;
   padding: 15px 50px;
 }
 
-.comp h4  {
+.comp h4 {
   color: var(--cor-h2);
   text-align: start;
   padding: 15px 50px;

@@ -69,7 +69,7 @@ header>nav>a {
 }
 
 header .ctt button {
-  padding: 15px 30px;
+  padding: 20px 50px;
   background-color: aqua;
   border: 0;
   border-radius: 25px;
@@ -80,9 +80,9 @@ header .ctt button {
 }
 
 header .ctt button:hover {
-  transform: scale(1.15);
+  transform: scale(1.10);
   transition: .2s ease-in;
-  box-shadow: 0 0 8px aqua;
+  box-shadow: 3px 3px 8px aqua;
 }
 
 a:hover {
@@ -90,23 +90,27 @@ a:hover {
 }
 
 h1 {
-    font-size: 3em;
-    font-style: italic;
-    background: linear-gradient(330deg, #0042ac, #0077F5, #01C5F5, #74DDF7);
-    background-size: 400% 100%;
-    animation: animado 5s linear infinite alternate;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 3em;
+  font-style: italic;
+  background: linear-gradient(330deg, #0042ac, #0077F5, #01C5F5, #74DDF7);
+  background-size: 400% 100%;
+  animation: animado 5s linear infinite alternate;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes animado {
-    0%  {
-        background-position-x: 0%;
-    }
-    100% {
-        background-position: 400%;
-    }
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
 }
+
+/* PARTE ABAIXO DO HEADER DO SITE */
+
 main {
   margin: 0 25px;
   color: white;
@@ -124,8 +128,13 @@ main h2 {
   padding: 15px 50px;
 }
 
+main h2 span {
+  color: white;
+}
+
 a {
   display: inline-block;
+  text-decoration: none;
 }
 
 .info {
