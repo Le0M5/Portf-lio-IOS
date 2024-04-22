@@ -44,6 +44,7 @@ body  {
   --espacamento-nav-a: 12.58em;
   --cor-foot: blue;
   --margin-padrao: 25px;
+  --cor-h2: aqua;
 }
 
 header {
@@ -101,13 +102,27 @@ h1 {
   }
 }
 
+
+
 p {
-  font-family: "Roboto Mono", monospace;
+  text-align: justify;
+  font-size: 24px;
+  padding: 0px 50px;
 }
 
 main {
-  margin: var(--margin-padrao);
+  margin: 0 25px;
   color: white;
+}
+
+.obj  {
+  margin: 0 90px;
+}
+
+.obj h2  {
+  color: var(--cor-h2);
+  text-align: start;
+  padding: 15px 50px;
 }
 
 a {

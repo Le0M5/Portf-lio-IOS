@@ -40,6 +40,7 @@
     --espacamento-nav-a: 12.58em;
     --cor-foot: blue;
     --margin-padrao: 25px;
+    --cor-h2: aqua;
 }
 
 body {
@@ -109,6 +110,7 @@ div.text-site p {
     padding: 0 50px;
     width: 1400px;
     font-size: 24px;
+    text-align: justify;
 }
 
 div.flex {
@@ -147,6 +149,7 @@ section.especialidades {
 .especialidades .especialidades-box p {
     font-size: 20px;
     font-family: "Roboto Mono", monospace;
+    text-align: center;
 }
 
 .especialidades .especialidades-box h3 {
