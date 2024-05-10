@@ -44,14 +44,20 @@ header {
     margin: 20px 0;
 }
 
-header a:hover {
+header a h1:hover {
     color: white;
-    transform: scale(1.15);
+    transform: scale(1.1);
+    transition: .2s ease-in;
+}
+
+.menu a:hover {
+    color: white;
+    transform: scale(1.25);
     transition: .2s ease-in;
 }
 
 header>nav>a {
-    padding: 0 30px;
+    padding: 0 275px;
     margin: 10px 0;
     color: gray;
     text-decoration: none;
@@ -70,7 +76,7 @@ header .ctt button {
 }
 
 header .ctt button:hover {
-    transform: scale(1.10);
+    transform: scale(1.05);
     transition: .2s ease-in;
     box-shadow: 3px 3px 8px aqua;
 }
@@ -192,6 +198,7 @@ form input.enviar[type=submit] {
     position: absolute;
     width: 120px;
     font-weight: bold;
+    margin: 20px 0;
 }
 
 form input.enviar:hover {

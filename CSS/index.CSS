@@ -45,6 +45,7 @@
 
 body {
     background: black;
+    text-align: justify;
 }
 
 .assunto {
@@ -58,9 +59,15 @@ header {
     margin: 20px 0;
 }
 
-header a:hover {
+header a h1:hover {
     color: white;
-    transform: scale(1.15);
+    transform: scale(1.1);
+    transition: .2s ease-in;
+}
+
+.menu a:hover {
+    color: white;
+    transform: scale(1.25);
     transition: .2s ease-in;
 }
 
@@ -84,7 +91,7 @@ header .ctt button {
 }
 
 header .ctt button:hover {
-    transform: scale(1.10);
+    transform: scale(1.05);
     transition: .2s ease-in;
     box-shadow: 3px 3px 8px aqua;
 }
@@ -124,9 +131,15 @@ div.flex {
 
 div.img {
     filter: drop-shadow(6px 2px 15px aqua);
-    width: 250px;
     display: flex;
     justify-content: center;
+    width: 300px;
+    padding-top: 70px;
+}
+
+.img img {
+    border-radius: 50%;
+    width: 300px;
 }
 
 main {
@@ -174,7 +187,7 @@ section.especialidades {
 .especialidades-box:hover {
     transform: scale(1.10);
     box-shadow: 0 0 20px white;
-    transition: 0.2s ease;
+    transition: 0.5s ease;
 }
 
 .especialidades h2 {
@@ -194,11 +207,6 @@ div.flex {
 
 .img {
     flex-direction: column-reverse;
-}
-
-div.img {
-    padding-left: 70px;
-    width: 300px;
 }
 
 h2.site {
@@ -240,11 +248,69 @@ textarea {
     padding: 5px;
 }
 
-li {
-    display: inline-block;
-    padding: 20px;
+span {
+    color: white;
 }
 
-span  {
+.info {
+    margin: 0 90px;
+}
+
+.info p {
+    padding: 0 50px;
+    font-size: 24px;
+}
+
+.info h2 {
+    text-align: start;
+    padding: 30px 50px;
+}
+
+.comp {
+    margin: 90px 5%;
+}
+
+.comp h2 {
+    color: var(--cor-h2);
+    text-align: start;
+    padding: 15px 50px;
+}
+
+.comp h4 {
+    color: var(--cor-h2);
+    text-align: start;
+    padding: 15px 50px;
+}
+
+ul {
+    font-family: "Roboto Mono", monospace;
+    padding: 20px 90px;
+}
+
+.obj {
+    margin: 0 90px;
+}
+
+.obj h2 {
+    color: var(--cor-h2);
+    text-align: start;
+    padding: 15px 50px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+main article p {
+    padding: 30px 50px;
+    font-size: 24px;
+}
+
+main h2 span {
     color: white;
-  }
+}
+
+hr  {
+    margin: 80px 70px;
+}
